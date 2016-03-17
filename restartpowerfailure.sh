@@ -92,7 +92,7 @@ function turn_restart_after_power_failure_on {
 }
 
 
-function install_script_to_usr_local {
+function install_script {
 		## IF, for some strange reason,
 		## you decide that you do not want this script installed to
 		## /usr/local/bin/
@@ -116,19 +116,29 @@ function install_script_to_usr_local {
 				return
 			fi
 
-
-
-
-
 			if [[ ! -d "$INSTALL_TO:h" ]]
 			then
 					mkdir -p "$INSTALL_TO:h"
 					chmod 755 "$INSTALL_TO:h"
 			fi
 
-				## if
+			ORIGINAL_FILEPATH="$0"
 
-			mv "$0" "$INSTALL_TO/$0:t"
+			mv "$0" "$INSTALL_TO"
+			
+
+			EXIT="$?"
+
+			if [ "$EXIT" = "0" ]
+			then
+				log "moved $ORIGINAL_FILEPATH to $INSTALL_TO"
+	
+			else
+				echo "$NAME: failed (\$EXIT = $EXIT)"
+
+				exit 1
+			fi
+			
 
 		fi
 }
