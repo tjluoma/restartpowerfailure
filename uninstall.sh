@@ -29,10 +29,14 @@ LABEL=`defaults read "$PLIST" Label`
 sudo launchctl stop "$LABEL" \
 || die "launchctl stop: failed"
 
+echo "$NAME: launchctl stop $LABEL was successful"
+
 ####################################################################################
 
 sudo launchctl unload "$PLIST" \
 || die "launchctl unload failed"
+
+echo "$NAME: launchctl unload $LABEL was successful"
 
 ####################################################################################
 
