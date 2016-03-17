@@ -2,7 +2,7 @@
 
 Purpose: This script will install a launchd plist to check to make sure that the Mac is set to restart automatically after a power failure
 
-<img src='https://github.com/tjluoma/restartpowerfailure/raw/master/system-preferences.jpg' style='max-width: 100%' alt='Screenshot of Energy Saver preference pane' />
+![OS X version 10.11.3 Energy Saver Preference Panel](system-preferences.jpg)
 
 OS X has a setting which is designed to automatically restart a Mac if the power goes out. However, for some reason this 
 feature keeps getting set to “off” even after the user has set it “on”. In order to alleviate that problem, this script (and a launchd plist)
