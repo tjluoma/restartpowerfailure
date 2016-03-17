@@ -25,7 +25,7 @@ If you see
 
 	Restart After Power Failure: Not supported on this machine.
 	
-then you should not use this script (no harm will be done, it’s just not useful.
+then you should not use this script (no harm will be done, it’s just not useful).
 
 ## Requires Administrator Permissions
 
