@@ -29,6 +29,6 @@ Use at your own risk.
 
 2.	Copy and paste this line:
 
-	/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/tjluoma/restartpowerfailure/master/install.sh)"
+`/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/tjluoma/restartpowerfailure/master/install.sh)"`
 
 (If you want to see what this is going to do, take a look at <https://github.com/tjluoma/restartpowerfailure/blob/master/install.sh>).
