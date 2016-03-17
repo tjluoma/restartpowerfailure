@@ -6,9 +6,26 @@ Purpose: This script will install a launchd plist to check to make sure that the
 
 OS X has a setting which is designed to automatically restart a Mac if the power goes out. However, for some reason this 
 feature keeps getting set to “off” even after the user has set it “on”. In order to alleviate that problem, this script (and a launchd plist)
-will check periodically to make sure that the setting has not been turned “off” and if it has been, then it will be turned back on. 
+will periodically tell the computer to turn that feature on. (If the setting was already on, it will stay on; if it was not on, it will be enabled.)
 
-_Note:_ some Macs, such as the MacBook (Retina, 12-inch, Early 2015), do not support this feature. Look for a setting in **System Preferences.app** under “Energy Saver” for a setting like the one shown above.
+## Check Before Usage
+
+Some Macs, such as the MacBook (Retina, 12-inch, Early 2015), do not support this feature. 
+Look for a setting in **System Preferences.app** under “Energy Saver” for a setting like the one shown above.
+
+You can also run this command in Terminal:
+
+	`sudo /usr/sbin/systemsetup -setrestartpowerfailure on`
+	
+You should see
+
+	`setrestartpowerfailure: On`
+	
+If you see
+
+	`Restart After Power Failure: Not supported on this machine.`
+	
+then you should not use this script (no harm will be done, it’s just not useful.
 
 ## Requires Administrator Permissions
 
