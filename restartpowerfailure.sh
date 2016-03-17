@@ -141,7 +141,7 @@ case "$CURRENT_STATUS" in
 	####|####|####|####|####|####|####|####|####|####|####|####|####|####|####
 	
 	"Restart After Power Failure: Not supported on this machine.")
-		log "This Mac does not support the Restart After Power Failure feature, so this script will not continue."
+		log "This Mac does not support the Restart After Power Failure feature"
 		
 			## If the plist exists, log an error because there's no reason to keep running it 
 		if [[ -e "$PLIST" ]]
