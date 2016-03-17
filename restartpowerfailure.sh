@@ -95,7 +95,7 @@ function get_current_status {
 		## put the current status of the 'systemsetup -getrestartpowerfailure' command
 		## into a variable named "$CURRENT_STATUS"
 
-		CURRENT_STATUS=`systemsetup -getrestartpowerfailure 2>&1 | tee -a "$LOG"`
+		CURRENT_STATUS=`systemsetup -getrestartpowerfailure 2>&1` | tee -a "$LOG"`
 		
 		
 }
