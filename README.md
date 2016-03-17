@@ -31,12 +31,14 @@ then you should not use this script (no harm will be done, it’s just not usefu
 
 ## Requires Administrator Permissions
 
-Due to OS X’s requirements, this script must be run as an administrator (which is accomplished using 'sudo' even if the user forgets).
+Due to OS X’s requirements, parts of the script must be run as an administrator which is accomplished using 'sudo' command.
+
+(If you want to see what this is going to do, take a look at <https://github.com/tjluoma/restartpowerfailure/blob/master/install.sh>).
 
 ## License and (Lack of) Warranty 
 
 This script and its related plist are released free of charge for anyone to use, modify, and change it in any way they see fit.
-All I ask if that my name be listed as a contributor and a link to the original at https://github.com/tjluoma/restartpowerfailure be included. 
+All I ask if that my name be listed as a contributor and a link to the original at <https://github.com/tjluoma/restartpowerfailure> be included. 
 
 ***This script comes without any guarantee/warranty/etc, expressed or implied.***
 
@@ -50,4 +52,4 @@ Use at your own risk.
 
 `/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/tjluoma/restartpowerfailure/master/install.sh)"`
 
-(If you want to see what this is going to do, take a look at <https://github.com/tjluoma/restartpowerfailure/blob/master/install.sh>).
+
