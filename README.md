@@ -15,15 +15,15 @@ Look for a setting in **System Preferences.app** under “Energy Saver” for a 
 
 You can also run this command in Terminal:
 
-	`sudo /usr/sbin/systemsetup -setrestartpowerfailure on`
+	sudo /usr/sbin/systemsetup -setrestartpowerfailure on
 	
 You should see
 
-	`setrestartpowerfailure: On`
+	setrestartpowerfailure: On
 	
 If you see
 
-	`Restart After Power Failure: Not supported on this machine.`
+	Restart After Power Failure: Not supported on this machine.
 	
 then you should not use this script (no harm will be done, it’s just not useful.
 
