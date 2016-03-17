@@ -95,7 +95,7 @@ function get_current_status {
 		## put the current status of the 'systemsetup -getrestartpowerfailure' command
 		## into a variable named "$CURRENT_STATUS"
 
-		CURRENT_STATUS=`systemsetup -getrestartpowerfailure 2>&1` | tee -a "$LOG"`
+		CURRENT_STATUS=`systemsetup -getrestartpowerfailure 2>&1 | tee -a "$LOG"`
 		
 		
 }
@@ -148,7 +148,7 @@ case "$CURRENT_STATUS" in
 		then
 			log "Attempting to remove the file $PLIST so this does not run automatically."
 			
-			LABEL=`defaults read "$PLIST" Label"
+			LABEL=`defaults read "$PLIST" Label"`
 			
 			launchctl stop "$LABEL" 2>/dev/null
 			
