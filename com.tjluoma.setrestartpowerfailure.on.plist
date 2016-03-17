@@ -17,6 +17,6 @@
 	<key>StandardOutPath</key>
 	<string>/var/log/com.tjluoma.setrestartpowerfailure.on.log</string>
 	<key>StartInterval</key>
-	<integer>86400</integer>
+	<integer>3600</integer>
 </dict>
 </plist>
