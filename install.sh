@@ -78,28 +78,7 @@ echo "$NAME: launchctl load was successful"
 
 ####################################################################################
 
-
-LOG_FULL_PATH=`defaults read "$INSTALL_TO" StandardOutPath 2>/dev/null`
-
-if [[ -e "$LOG_FULL_PATH" ]]
-then
-
-	if [[ -s "$LOG_FULL_PATH" ]]
-	then
-			## Show the user the last 10 lines of the log, if it exists
-			## (There's probably only one line in it at the moment anyway)
-		sudo tail -10 "$LOG_FULL_PATH exists"
-	else
-		echo "$NAME: $LOG_FULL_PATH exists, but it is empty"
-	fi 
-
-
-else
-	echo "$NAME: No file found at $LOG_FULL_PATH"
-fi 
-
-####################################################################################
-
+echo "$NAME: Exiting after all steps were successful."
 
 ####################################################################################
 
