@@ -53,3 +53,13 @@ Use at your own risk.
 `/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/tjluoma/restartpowerfailure/master/install.sh)"`
 
 
+
+## How to stop/uninstall
+
+1.	Launch "/Applications/Utilities/Terminal.app" 
+
+2.	Copy and paste this line:
+
+`/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/tjluoma/restartpowerfailure/master/uninstall.sh)"`
+
+
