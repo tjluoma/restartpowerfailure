@@ -16,6 +16,8 @@ Look for a setting in **System Preferences.app** under “Energy Saver” for a 
 You can also run this command in Terminal:
 
 	sudo /usr/sbin/systemsetup -setrestartpowerfailure on
+
+_(You will be prompted to enter your administrator password, this is the password you use to log in on your Mac.)_
 	
 You should see
 
